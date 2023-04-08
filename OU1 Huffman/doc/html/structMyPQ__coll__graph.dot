@@ -1,0 +1,14 @@
+digraph "MyPQ"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="MyPQ",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pq" ,fontname="Helvetica"];
+  Node2 [label="list",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlist.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" end\nfirst" ,fontname="Helvetica"];
+  Node3 [label="node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structnode.html",tooltip="Struct for the nodes. "];
+  Node3 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" prev\nnext\nrightChild\nparent\nleftChild" ,fontname="Helvetica"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bottom\ntop" ,fontname="Helvetica"];
+  Node4 [label="two_cell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structtwo__cell.html"];
+  Node4 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" previous\nnext" ,fontname="Helvetica"];
+}
